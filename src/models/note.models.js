@@ -15,6 +15,7 @@ const userSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
+    completed: { type: Boolean, default: false },
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
